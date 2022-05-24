@@ -96,7 +96,7 @@
                     						<h3 class="mb-0">Research and Innovations in <br>Civil Engineering and Architecture </h3>
                     						<i>11 - 13 August 2022</i>
                     						<span class="d-block"><a href="https://goo.gl/maps/BcUJhKWnnT4phzHb8"><i class="fas fa-map-marker-alt"></i><strong>Location:</strong> RV College of Engineering, Bengaluru, India</span></a>
-                    						<a class="thm-btn lft-icon brd-btn" href="event-detail.html" title=""><i class="flaticon-coupon"></i>Resgiter Now<span></span></a>
+                    						<a class="thm-btn lft-icon brd-btn" href="" title=""><i class="flaticon-coupon"></i>Resgiter Now<span></span></a>
                     					</div>
                     				</div>
                     				<div class="col-md-10 col-sm-12 col-lg-8 order-md-1">
@@ -357,54 +357,49 @@
                 </div>
             </section>
             <section>
-                <div class="w-100 position-relative">
-                    <div class="gallery-wrap w-100">
-                    	<div class="row mrg">
-                    		<div class="col-md-6 col-sm-6 col-lg-3">
-                    			<div class="gallery-item position-relative w-100">
-                    				<img class="img-fluid w-100" src="assets/images/gal11.png" alt="Gallery Image 1">
-                    				<a href="assets/images/gal1.png" data-fancybox="gallery" title=""><i class="flaticon-loupe"></i></a>
-                    			</div>
-                    		</div>
-                    		<div class="col-md-6 col-sm-6 col-lg-3">
-                    			<div class="gallery-item position-relative w-100">
-                    				<img class="img-fluid w-100" src="assets/images/gal22.png" alt="Gallery Image 2">
-                    				<a href="assets/images/gal2.png" data-fancybox="gallery" title=""><i class="flaticon-loupe"></i></a>
-                    			</div>
-                    		</div>
-                    		<div class="col-md-12 col-sm-12 col-lg-6">
-                    			<div class="gallery-item position-relative w-100">
-                    				<img class="img-fluid w-100" src="assets/images/gal33.png" alt="Gallery Image 3">
-                    				<a href="assets/images/gal3.png" data-fancybox="gallery" title=""><i class="flaticon-loupe"></i></a>
-                    			</div>
-                    		</div>
-                    		<div class="col-md-6 col-sm-6 col-lg-3">
-                    			<div class="gallery-item position-relative w-100">
-                    				<img class="img-fluid w-100" src="assets/images/gal44.png" alt="Gallery Image 4">
-                    				<a href="assets/images/gal4.png" data-fancybox="gallery" title=""><i class="flaticon-loupe"></i></a>
-                    			</div>
-                    		</div>
-                    		<div class="col-md-6 col-sm-6 col-lg-3">
-                                <div class="gallery-item position-relative w-100">
-                                    <img class="img-fluid w-100" src="assets/images/gal55.png" alt="Gallery Image 4">
-                                    <a href="assets/images/gal5.png" data-fancybox="gallery" title=""><i class="flaticon-loupe"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-lg-3">
-                                <div class="gallery-item position-relative w-100">
-                                    <img class="img-fluid w-100" src="assets/images/gal66.png" alt="Gallery Image 4">
-                                    <a href="assets/images/gal6.png" data-fancybox="gallery" title=""><i class="flaticon-loupe"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-lg-3">
-                                <div class="gallery-item position-relative w-100">
-                                    <img class="img-fluid w-100" src="assets/images/gal77.png" alt="Gallery Image 4">
-                                    <a href="assets/images/gal7.png" data-fancybox="gallery" title=""><i class="flaticon-loupe"></i></a>
-                                </div>
-                            </div>
-                    	</div>
-                    </div><!-- Gallery Wrap -->
-                </div>
+            <!--added later -->
+            <div class="slider w-100 position-relative">
+      <div class="slide active">
+        <img src="assets/images/gal3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="assets/images/gal2.png" alt="">
+        <div class="info">
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/gal1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="assets/images/gal4.jfif" alt="">
+      </div>
+      <div class="slide">
+        <img src="assets/images/gal5.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="assets/images/gal6.jfif" alt="">
+      </div>
+      <div class="slide">
+        <img src="assets/images/gal7.jfif" alt="">
+      </div>
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+    </div>
+</section>
+
+            <section>
+                
                 <div class="facts-wrap mt-70 style2 text-center w-100">
                                 <div class="col-md-12 col-sm-12 col-lg-12">
                                     <div class="fact-box mt-30 w-100">
@@ -423,6 +418,88 @@
                 </div>
             </div><!-- Bottom Bar -->
         </main><!-- Main Wrapper -->
+            <script type="text/javascript">
+    const slider = document.querySelector(".slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+    const slides = document.querySelectorAll(".slide");
+    const slideIcons = document.querySelectorAll(".slide-icon");
+    const numberOfSlides = slides.length;
+    var slideNumber = 0;
+
+    //image slider next button
+    nextBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber++;
+
+      if(slideNumber > (numberOfSlides - 1)){
+        slideNumber = 0;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider previous button
+    prevBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber--;
+
+      if(slideNumber < 0){
+        slideNumber = numberOfSlides - 1;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider autoplay
+    var playSlider;
+
+    var repeater = () => {
+      playSlider = setInterval(function(){
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      }, 4000);
+    }
+    repeater();
+
+    //stop the image slider autoplay on mouseover
+    slider.addEventListener("mouseover", () => {
+      clearInterval(playSlider);
+    });
+
+    //start the image slider autoplay again on mouseout
+    slider.addEventListener("mouseout", () => {
+      repeater();
+    });
+    </script>
+
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>

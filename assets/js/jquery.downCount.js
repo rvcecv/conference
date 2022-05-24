@@ -28,3 +28,8 @@ function updateTimer() {
 }
 setInterval('updateTimer()', 1000 );
 
+
+/*sliderr*/
+
+      
+
